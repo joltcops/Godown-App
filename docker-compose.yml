@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    volumes:
+      - ./backend:/app  # Mount the backend code
+    ports:
+      - "8000:8000"  # Expose the port for Django
+    environment:
+      - DJANGO_SETTINGS_MODULE=warehouse.settings  # Replace with your project name
+
+  frontend:
+    build:
+      context: ./frontend
+    volumes:
+      - ./frontend:/app  # Mount the frontend code
+    ports:
+      - "3000:3000"  # Expose the port for React
+
+volumes:
+  postgres_data:  # Keep this if you have any plans to switch to PostgreSQL in the future

@@ -1,20 +1,25 @@
-# Use the official Python image
 FROM python:3.10
 
-# Set the working directory in the container
 WORKDIR /app
 
-# Copy the requirements file into the container
-COPY requirements.txt .
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libffi-dev \
+    libssl-dev \
+    python3-dev \
+    && rm -rf /var/lib/apt/lists/*
 
-# Install the required packages
+# Upgrade pip and setuptools
+RUN pip install --upgrade pip setuptools
+
+# Install PyYAML separately
+RUN pip install --no-cache-dir PyYAML>=6.0
+
+# Now copy the requirements and install the rest
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the project files into the container
 COPY . .
 
-# Expose the port the app runs on
-EXPOSE 8000
-
-# Command to run the app
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]

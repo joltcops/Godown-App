@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black; /*background color=black*/
+    color: white; /*text color=white*/
+}
+
+.tree-view-container {
+    display: flex; /*flexbox to arrange sidebar and main content*/
+}
+
+.sidebar {
+    width: 250px; /*width of the sidebar*/
+    background-color: #1c1c1c; /*Darker background for the sidebar*/
+    padding: 15px; /*Add padding to sidebar*/
+    height: 100vh; /*Make the sidebar take full height*/
+    overflow-y: auto; /*Enable scrolling if the content exceeds the height*/
+}
+
+.godown-button {
+    background-color: red; /*Red background for godown buttons*/
+    color: white; /*Font colour=white*/
+    border: none; /*No border*/
+    padding: 10px; /*Add padding*/
+    margin: 5px 0; /*Space between buttons*/
+    width: 100%; /*Make buttons full width*/
+    cursor: pointer; /*Change cursor to pointer*/
+    transition: background-color 0.3s ease; /*Transition for hover effect*/
+    border-radius: 5px; /*Rounded corners*/
+}
+
+.godown-button:hover {
+    background-color: darkred; /*Darker red on hover*/
+}
+
+.main-content {
+    flex: 1; /*Main content takes the remaining space*/
+    padding: 15px; /*Add padding to main content*/
+    overflow-y: auto; /*Enable vertical scrolling if content exceeds height*/
+}
+
+.item-button {
+    background-color: green; /*Green background for item buttons*/
+    color: white; /*White text color*/
+    border: none; /*No border*/
+    padding: 10px; /*Add padding*/
+    margin: 5px 0; /*Space between buttons*/
+    width: 100%; /*Make buttons full width*/
+    cursor: pointer; /*Change cursor to pointer*/
+    transition: background-color 0.3s ease; /*Transition for hover effect*/
+    border-radius: 5px; /*Rounded corners*/
+}
+
+.item-button:hover {
+    background-color: darkgreen; /*Darker green on hover*/
+}
+
+/*Style for the selected item display*/
+.item-details {
+    border: 1px solid white; /*White border around item details*/
+    padding: 15px; /*Padding for item details*/
+    margin-top: 10px; /*Space above item details*/
+    background-color: #2c2c2c; /*Dark background for item details*/
+}
+/*General Body Styles*/
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black; /*Set the background color to black*/
+    color: white; /*Set the text color to white*/
+}
+
+/*Form Container*/
+.form-container {
+    display: flex;
+    justify-content: center; /*Center horizontally*/
+    align-items: center; /*Center vertically*/
+    height: 100vh; /*Full viewport height*/
+}
+
+/*Form Styles*/
+form {
+    background-color: #1c1c1c; /*Darker background for the form*/
+    padding: 20px; /*Padding around the form*/
+    border-radius: 8px; /*Rounded corners*/
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /*Subtle shadow for depth*/
+    width: 400px; /*Fixed width for the form*/
+}
+
+/*Form Heading*/
+form h2 {
+    text-align: center; /*Center the heading*/
+    margin-bottom: 20px; /*Space below heading*/
+}
+
+/*Input Fields*/
+input[type="email"],
+input[type="password"] {
+    width: 100%; /*Full width for input fields*/
+    padding: 10px; /*Padding inside input fields*/
+    margin: 10px 0; /*Space above and below input fields*/
+    border: 1px solid #ccc; /*Light border*/
+    border-radius: 4px; /*Rounded corners*/
+    background-color: #2c2c2c; /*Dark background for input*/
+    color: white; /*White text color*/
+}
+
+/*Focus Styles for Input Fields*/
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none; /*Remove outline*/
+    border-color: red; /*Change border color on focus*/
+}
+
+/*Button Styles*/
+button {
+    background-color: red; /*Red background for buttons*/
+    color: white; /*White text color*/
+    border: none; /*No border*/
+    padding: 10px; /*Add padding*/
+    margin-top: 10px; /*Space above the button*/
+    width: 100%; /*Full width for buttons*/
+    cursor: pointer; /*Change cursor to pointer*/
+    border-radius: 4px; /*Rounded corners*/
+    transition: background-color 0.3s ease; /*Transition for hover effect*/
+}
+
+/*Button Hover Effects*/
+button:hover {
+    background-color: darkred; /*Darker red on hover*/
+}
+
+/*Error Messages*/
+.error-message {
+    color: red; /*Red color for error messages*/
+    text-align: center; /*Center align error messages*/
+    margin-top: 10px; /*Space above error messages*/
+}
+
+/*Success Messages*/
+.success-message {
+    color: green; /*Green color for success messages*/
+    text-align: center; /*Center align success messages*/
+    margin-top: 10px; /*Space above success messages*/
+}
+
+/*Links*/
+a {
+    color: white; /*White color for links*/
+    text-decoration: none; /*No underline*/
+    display: block; /*Display as block for easy clicking*/
+    text-align: center; /*Center the link*/
+    margin-top: 10px; /*Space above the link*/
+}
+
+a:hover {
+    text-decoration: underline; /*Underline on hover*/
+}

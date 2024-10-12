@@ -1,1 +1,1 @@
-web: gunicorn warehouse.wsgi
+web: gunicorn backend.warehouse.wsgi

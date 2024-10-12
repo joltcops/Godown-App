@@ -15,6 +15,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+CORS_ALLOW_ALL_ORIGINS = True
 
 
 # Quick-start development settings - unsuitable for production
@@ -135,6 +136,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Your frontend's URL
-    "https://warehouse-42ktil6cz-pracheta-sahas-projects.vercel.app"
+    "https://warehouse-hn7kavbv3-pracheta-sahas-projects.vercel.app"
 ]
 

@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
 RUN pip install --upgrade pip setuptools
 
 # Install PyYAML separately
-RUN pip install --no-cache-dir PyYAML>=6.0
+RUN pip install --no-cache-dir PyYAML>=6.0 --timeout=120
 
 # Now copy the requirements and install the rest
 COPY requirements.txt .

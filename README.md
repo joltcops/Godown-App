@@ -86,4 +86,7 @@ Frontend Deployment Link:<br>
 "https://warehouse-hn7kavbv3-pracheta-sahas-projects.vercel.app" 
 
 Backend Deployment Link:<br>
-"https://obscure-badlands-67498-8ccc889a168e.herokuapp.com/api/" (Deployment done, but with errors, so it hasn't been integrated with the deployed frontend :(  )
+"https://obscure-badlands-67498-8ccc889a168e.herokuapp.com/api/" (Deployment done, but with errors, so it hasn't been integrated with the deployed frontend)
+
+Demo Video Link:<br>
+https://drive.google.com/file/d/1Lbux2_Oc7vdTl4R84WGK26ksIB0gFAJb/view?usp=drive_link

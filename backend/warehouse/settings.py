@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-k3#qyvygb_%c@o$^5$+ypik^n4!5u%fv=pyrkdpjfo+4u@3-5*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://obscure-badlands-67498-8ccc889a168e.herokuapp.com/api/"]
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

@@ -81,3 +81,9 @@ Example of Hierarchical Rendering:<br>
 Godowns and Sub-Godowns: Parent godowns are displayed first. When a user clicks the "+" button next to a godown, it expands to show sub-godowns and the items within that godown.<br>
 Recursive Functionality: The renderSubGodowns function recursively processes each godown’s children, allowing for a multi-level hierarchy (e.g., godown → sub-godown → sub-sub-godown).<br>
 Dynamic UI: Expanding and collapsing godowns dynamically alters the UI, with only the relevant child godowns and items shown when a parent is expanded.<br>
+
+Frontend Deployment Link:<br>
+"https://warehouse-hn7kavbv3-pracheta-sahas-projects.vercel.app" 
+
+Backend Deployment Link:<br>
+"https://obscure-badlands-67498-8ccc889a168e.herokuapp.com/api/" (Deployment done, but with errors, so it hasn't been integrated with the deployed frontend :(  )

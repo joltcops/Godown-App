@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-k3#qyvygb_%c@o$^5$+ypik^n4!5u%fv=pyrkdpjfo+4u@3-5*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://obscure-badlands-67498-8ccc889a168e.herokuapp.com/api/"]
+ALLOWED_HOSTS = ['obscure-badlands-67498-8ccc889a168e.herokuapp.com', 'localhost', '127.0.0.1']
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -51,6 +51,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
